@@ -57,7 +57,7 @@ Only available **within an AZ**.
 
 **The in-memory state is preserved.**  
 RAM is dumped into an **EBS** only, then reloaded later.  
-EBS should have **enough space** and **be encrypted**.  
+EBS should have **enough space** and **have encryption enabled**.  
 Thanks to this, the **booting process is much faster**.
 
 Not supported for bare metal instances.  
