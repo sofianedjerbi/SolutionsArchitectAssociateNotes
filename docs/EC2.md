@@ -30,6 +30,7 @@ Placement withing the AWS infrastructure.
   - Partitions should be isolated in term of failure.
   - Partitions do not share the same physical rack.
   - HDFS, HBase, Cassandra, Kafka
+  - Apps that need a lot of instances and high availability. 
 
 ## ENI: Elastic Network Interface
 
