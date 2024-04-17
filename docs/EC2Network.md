@@ -1,4 +1,4 @@
-# EC2
+# EC2 Network
 
 ## IPs
 
@@ -61,4 +61,5 @@ EBS should have **enough space** and **have encryption enabled**.
 Thanks to this, the **booting process is much faster**.
 
 Not supported for bare metal instances.  
+Data in store volume is lost.  
 **You cannot hibernate more than 60 days.**
