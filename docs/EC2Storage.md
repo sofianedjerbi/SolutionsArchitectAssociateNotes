@@ -4,7 +4,15 @@
 
 Used to **delete an EBS volume when an instance is terminated.**
 
+## EBS Backups
+
+A more **heavy / secure way of saving an EBS**.   
+It is **not done incrementally**.  
+Used for **long-term retention** whereas snapshots are for **quick recovery**.
+
 ## EBS Snapshot Features
+
+Note: Snapshot captures data **incrementally**.
 
 ### Archives
 
@@ -104,6 +112,7 @@ The snapshot will be encrypted too.
 
 ## EFS Precisions
 
+**More expensive** than EBS.  
 **POSIX Filesystem**, **scales automatically** (only pay for what you use).  
 Uses NFSv4.1 protocol.  
 Encryption at rest with KMS.
