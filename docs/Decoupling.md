@@ -158,6 +158,3 @@ Has both a **queue feature** and a **topic feature**.
 Supports standard protocols: MQTT, AMQP, STOMP...  
 
 For high availability you have a **standby** MQ Broker, with an **EFS**, used to store data.
-
-##
-
