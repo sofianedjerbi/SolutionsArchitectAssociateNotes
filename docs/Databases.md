@@ -210,3 +210,25 @@ This enables caching of user data for retrieval across different app instances, 
 - Oracle: 1521
 - MSSQL: 1433
 
+## DocumentDB Precisions
+
+Aurora **MongoDB semi-implementation in AWS**.  
+It grows in **increments of 10GB**.  
+Fully managed with replication across 3 AZ.
+
+## Neptune Precisions
+
+Fully managed **graph** database.  
+It has replication accross 3 AZs.
+
+## Keyspaces (for Apache Cassandra)
+
+A managed **Apache Cassandra**-compatible db service.  
+Replicated across 3 AZ.
+
+## Timestream Precisions
+
+Has built-in time series **analytics**.  
+You can export to Grafana, SageMaker...
+
+
