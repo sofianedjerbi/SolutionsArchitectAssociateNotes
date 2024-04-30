@@ -52,5 +52,5 @@ The edge locations send the traffic to your application.
 It also offer **health checks** and **DDoS protection** with Shield.  
 Endpoints are ALB, NLB, EC2 and Elastic IP.
 
-*Good for HTTP use cases that require static IP addresses, or fast regional failover.*
+*Important: Good for HTTP use cases that require static IP addresses, or fast regional failover.*
 

@@ -7,11 +7,11 @@ Supports CSV, JSON, ORCm Avro, Parquet.
 You pay **5$ per TB of data scanned**.  
 Commonly used with QuickSight for dashboards.
 
-### Improvements
-- Comulnar data with Parquet or ORC.  
-- Compress data
-- Partition data in S3 for easy querying *(year/month/day)*
-- Use bigger files
+### Cost / Performance Improvements
+- Use optimized columnar data with Parquet or ORC.  
+- Compress data.
+- Partition data in S3 for easy querying. *(path: year/month/day)*
+- Use bigger files.
 
 ### Federated Query
 
@@ -25,21 +25,21 @@ Dashboard tools integrate with it. It has **faster joins / queries / aggregation
 
 ### Cluster
 
-Leader node and compute nodes.  
+Composed of a **leader node** and **compute nodes**.  
 You can use **reserved instances** for cost saving.
 
-### Snapshots & DR
+### Snapshots & Disaster Recovery (DR)
 
 Redshift has **multi-az** mode and snapshots that are **PITR** backups stored in S3.  
 Automated and manual snapshots are available. You can copy snapshots to another region.
 
 ### Import Data
 
-Firehose, S3 bucket, EC2 instance.  
+You can import data from Firehose, S3 buckets and EC2 instances.  
 
 ### Redshift Spectrum
 
-With an **available Redshift cluster**, you can query data in S3 **without loading it**.
+With an **available Redshift cluster**, you can query data in S3 **without loading it in a database**.
 
 ### Enhanced VPC Routing
 
@@ -53,15 +53,14 @@ Does not support SQL by default but can support it with a plugin.
 **It still requires data to be loaded inside.**  
 You can load logs, analyze in real time.
 
-*DynamoDB -> DynamoDB Stream -> Lambda -> OpenSearch*
+*DynamoDB -> DynamoDB Stream -> Lambda -> OpenSearch*  
 *Then we can query data in OpenSearch and load the full data with DynamoDB*
-
 
 ## EMR Precisions
 
 Create clusters of **hundreds of EC2 instances**. *(Spark, HBase, Presto...)*  
-Master node, core node and task node.  
-On-demand and reserved offers. You can use spot instances for task nodes.
+Master/Primary node, core node and task node. Task nodes aren't required to be persistent.  
+There are **on-demand and reserved offers**. You can use **spot instances for task nodes**.
 
 ## QuickSight Precisions
 
@@ -73,7 +72,7 @@ You can share dashboards with users and groups.
 
 ## Glue Precisions
 
-It is a **serverless ETL** service (Extract, Transform and Load).
+It is a **serverless ETL** service (Extract, Transform and Load).  
 *S3 CSV -> EventBridge -> Glue Parquet conversion -> Send into S3 for Athena analysis*  
 
 ### Glue Data catalog
@@ -87,7 +86,7 @@ Prevent re-processing old data
 
 ### Glue Elastic Views
 
-Combine and replicate data across multiple data stores with SQL.
+Combine and replicate data across multiple data stores with SQL to provide an **unified view of all the data**.
 
 ### Glue DataBrew
 
