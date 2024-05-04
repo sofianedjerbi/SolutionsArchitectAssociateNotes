@@ -25,4 +25,32 @@ Beanstalk deployment modes:
 - **Single Instance:** Great for dev. Uses Elastic IP.
 - **High Availability with Load Balancer**: Basic ELB / ASG pattern
 
+## Event Processing
+
+**SQS => Lambda** (+ DLQ after N tries or 1st try if FIFO)  
+**SNS => Lambda + Internal try => DLQ on SQS** 
+
+Fan out pattern: **Deliver to multiple SQS Queues with SNS**.  
+
+Remember you can use **EventBridge** for more **destinations** and **better filters**.  
+You can also use it with **CloudTrial** to **intercept API Calls**.
+
+## Caching Strategies
+
+**Edge:** CloudFront with TTS
+**AWS Level:** API Gateway cache
+**App Level:** Redis / DAX / Memcached
+
+## HPC on AWS
+
+- **Data Transfer:** Direct Connect, Snow Family, DataSync  
+- **Compute:** CPU/GPU optimized instances, auto scaling  
+- **Network:**  
+  - Cluster (same rack / AZ)
+  - EC2 Enhanced Networking with Elastic Network Adapter, ENA *(can go up to 100 Gbps)*
+  - Elastic Fabric Adapter (EFA), an improved ENA for Linux HPC  
+- **Storage:** 
+  - Attached: EBS, Interface Store
+  - Network: S3, EFS, FSx for Lustre
+- **Automation:** Batch jobs, AWS ParallelCluster to deploy HPC clusters.
 
