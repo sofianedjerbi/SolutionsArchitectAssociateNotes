@@ -41,7 +41,7 @@ You can trigger a cache invalidation with an **object name** or a **prefix**.
 ## Unicast vs Anycast
 
 **Unicast:** Traditional IP association.  
-**Anycast:** Two servers with the same IP, user will be sent to the closest one.
+**Anycast:** Two or more servers with the same IP, user will be sent to the closest one.
 
 ## Global Accelerator Precisions
 

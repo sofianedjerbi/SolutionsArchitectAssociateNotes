@@ -10,7 +10,6 @@ Make sure to read and understand [my notes on the Cloud Practitioner exam](https
 
 ## Table Of Contents
 
-
 - [EC2 Network](docs/EC2Network.md)
 - [EC2 Storage](docs/EC2Storage.md)
 - [Scaling](docs/Scaling.md)

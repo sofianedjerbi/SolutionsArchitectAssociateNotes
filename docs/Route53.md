@@ -45,7 +45,7 @@ They are health checkers from all around the world only **for public resources**
 For **automated DNS failover**.  
 Types:
 
-- Monitor **and endpoint**
+- Monitor **an endpoint**
 - Monitor **other health checks** *(calculated health checks)*
 - Monitor **CloudWatch Alarms**
 
@@ -61,5 +61,3 @@ For **private healthchecks**, create a **CloudWatch metric and associate it with
 - **Geoproximity:** Send user to the closest endpoint. **Bias** (in/de)crease the range of an endpoint.
 - **IP-Based:** Map the endpoint based on client CIDR IP addresses. *(Optimize cost and performance...)* 
 - **Multi-Value Answer:** Route traffic to up to 8 healthy resources. **NOT A SUBSTITUTE TO ELBs!**
-- **Geoproximity:**
-

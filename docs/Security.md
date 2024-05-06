@@ -11,7 +11,7 @@ Options :
 Keys types:
 
 - AWS Owned: free, integrated, invisible.
-- AWD Managed: free, integrated, accesible. *(aws/service-name)*
+- AWS Managed: free, integrated, accesible. *(aws/service-name)*
 - Customer managed: 1$ / month
 
 All keys are rotated **every year**, except for the customer imported keys that you should rotate manually.
@@ -83,12 +83,13 @@ In Edge-Optimized, **CloudFront** is linked to **ACM**, in **regional it is API 
 ## Web Application Firewall (WAF) Precisions
 
 Protect in HTTP layer 7.  
-You can deploy it on: **ALB, API Gateway, CloudFront, AppSync, Cognito User Pool**.
+You can deploy it on: **ALB, API Gateway, CloudFront, AppSync, Cognito User Pool**.  
 You can then define **Web ACLs**:
 - Filter based on ip addresses
 - Filter on HTTP header, body, url strings
 - Block countries
 - Rate-based rules  
+
 They are **regional except for CloudFront**.  
 A **rule group** is a **reusable set of rules** that you can add to a web ACL.  
 

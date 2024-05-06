@@ -37,8 +37,8 @@ You can also use it with **CloudTrial** to **intercept API Calls**.
 
 ## Caching Strategies
 
-**Edge:** CloudFront with TTS
-**AWS Level:** API Gateway cache
+**Edge:** CloudFront with TTS  
+**AWS Level:** API Gateway cache  
 **App Level:** Redis / DAX / Memcached
 
 ## HPC on AWS

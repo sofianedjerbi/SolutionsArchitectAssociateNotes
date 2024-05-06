@@ -90,7 +90,7 @@ Can increase PIOPS independently from storage size.
 
 ## Multi-Attach
 
-Only for **IO IO2 volumes**.  
+Only for **IO1 and IO2 volumes**.  
 You can attach the volume to **up to 16 instances in the same AZ**.  
 **Use case:** Higher app availability  
 App must manage concurrent write applications.  

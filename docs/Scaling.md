@@ -11,7 +11,7 @@ They can be private or public.
 It supports load balancing to **multiple applications in the same machine**.   
 They can route to **multiple target groups**.    
 It has a **fixed hostname**  
-*Reminder: ALB is for HTTP / HTTPs and Websocket.*
+*Reminder: ALB is for HTTP / HTTPs (Stateless) and Websocket (Stateful).*
 
 Routing rules are:
 - The **path in the URL** *(test.com/users...)*
@@ -34,7 +34,7 @@ Client IP is forwarded in **X-Forwarded-For** header.
 
 ## NLB Precisions
 
-It can handle **millins of requests per seconds**.  
+It can handle **millions of requests per seconds**.  
 NLB has **one static IP per AZ**, and supports Elastic IP.  
 
 Healths checks supports TCP, HTTP and HTTPS protocols.
