@@ -117,7 +117,7 @@ Reduce attack surface:
 
 ## GuardDuty Precisions
 
-**Input Data:** CloudTrail logs, VPC Flow Logs, DNS Logs...  
+**Input Data:** CloudTrail logs, VPC Flow Logs, DNS Logs.  
 **EventBridge Rules** can notify you in case of findings.  
 **It can protect against CryptoCurrency attacks**.
 

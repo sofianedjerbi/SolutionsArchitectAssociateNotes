@@ -23,6 +23,8 @@ Routing rules are:
 You can define a priority, when multiples rules are matches the highest priority will win.  
 Client IP is forwarded in **X-Forwarded-For** header.
 
+*Note: Launch configuration CANNOT be changed!*
+
 ### Target groups
 
 - **EC2 Instances**

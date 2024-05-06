@@ -60,7 +60,7 @@ AWS <-> AWS (S3, FSx, EFS)
 
 ## Storage Comparison
 
-- **S3:** Object Storage
+- **S3:** Object Storage *(Note: you have to wait 30 days for transition)*
 - **S3 Glacier:** Object Archival
 - **EBS volumes:** Network storage for one EC2 instance at a time
 - **Instance Storage:** Physical storage for your EC2 instance (high IOPS)

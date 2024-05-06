@@ -215,3 +215,7 @@ A **NAT Gateway + Internet Gateway** for IPv6.
 Protect the **entire VPC**. Internally it uses the GLB.  
 **Rules can be managed cross account** and across VPC.  
 We can filter with regex, ip, port, protocol, domain...
+
+## VPC Sharing
+
+Allow a **multiple AWS accounts to share one or more subnets**.

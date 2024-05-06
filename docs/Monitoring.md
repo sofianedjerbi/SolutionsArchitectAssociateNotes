@@ -57,7 +57,7 @@ You need an **agent:** Log Agent (Old) / Unified Agent (New)
 ## CloudWatch Alarms
 
 We can associate **triggers** to metrics.  
-Used to scale EC2 Instances, Terminate/Reboot/Recover EC2, and for SNS.  
+**Alarm Action** are used to scale EC2 Instances, Terminate/Reboot/Recover EC2, and for SNS.  
 **Composite alarms** are alarms based on **multiple metrics**. *(reduce alarm noise)*
 
 ## CloudWatch Events / EventBridge
@@ -99,3 +99,4 @@ All this information is stored into an **S3 bucket**.
 
 **Config Notifications** can send notifications, email on changes.
 
+*(Ex: Send a message when a certificate is about to expire)*
