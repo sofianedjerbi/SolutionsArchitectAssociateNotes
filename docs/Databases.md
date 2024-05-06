@@ -129,7 +129,7 @@ Audit **logs can be enabled and sent to CloudWatch Logs**.
 - **At-rest encryption** uses KMS, defined at launch time. Master need to be encrypted for read replicas.
 - **In-flight encryption:** TLS-ready by default, client-side should use AWS TLS root certificates.
 
-To encrypt an unecrypted database, you need to take a snapshot ans restore as encrypted.
+To encrypt an unecrypted database, you need to take a snapshot and restore as encrypted.
 
 ### Authentication
 
