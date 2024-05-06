@@ -104,6 +104,8 @@ You don't need ML experience.
 *Trick: Stopped RDS database will create charges for storage.*    
 *If you wanna stop it for a long time, you should snapshot it & restore it later*
 
+*(Note: A snapshot can be shared to other AWS accounts)*
+
 ## Aurora Backups
 
 - **Automated continuous backups** *(ability to restore from any point in time up to 35 days)*

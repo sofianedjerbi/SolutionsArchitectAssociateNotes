@@ -219,3 +219,7 @@ We can filter with regex, ip, port, protocol, domain...
 ## VPC Sharing
 
 Allow a **multiple AWS accounts to share one or more subnets**.
+
+## AWS Resource Access Manager (RAM)
+
+Allows sharing AWS **subnet resources** **across accounts** securely.

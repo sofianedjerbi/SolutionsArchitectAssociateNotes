@@ -33,9 +33,9 @@ With a resource-based policy you **don't have to give up permissions**.
 
 When using EventBridge, you **should use resource-based policy OR an IAM role to allow EventBridge to write**.
 
-## IAM Permissions Boundaries Previsions
+## IAM Permissions Boundaries Precisions
 
-Only for **users and roles**, not groups.  
+Only for users and roles, **not groups**.  
 It defines **maximum permission limit**. Giving a permission **outside the boundary** have **no effect**.
 
 ## IAM Identity Center Precisions

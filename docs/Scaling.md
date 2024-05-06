@@ -118,5 +118,24 @@ We can use **CloudWatch alarms to scale in/out ASGs**.
 After a scaling happens **there is a cooldown period** (default 300 seconds).  
 During the cooldown, **no instances are going to be terminated / launched**.  
 
+## ASG Termination Policy
 
+- **Check the AZ with the most instances**
+- **Priorities Spot Instances over On Demand**
+- **Launch Template:** If no launch configuration kill the older launch template
+- **Launch Configuration:** Kill the older launch configuration
+- If there's still multiple EC2 instances, kill the one **closest to the next billing hour**.
 
+## Instance Impaired Status
+
+When an **AWS-side issue occur on an instance**.  
+ASG Does not immediately terminate instances with an **Impaired Status**.  
+It waits a few minutes for the instance to recover.
+
+## Spot Fleet
+
+A group of **EC2 spot instances**.
+
+## Spot Block
+
+A **reserved spot instance for 1 to 6 hours**.
