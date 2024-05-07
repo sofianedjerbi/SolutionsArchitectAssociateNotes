@@ -25,6 +25,14 @@ When a message it polled, it becomes **invisible to other consumers**.
 Default = 30 secs = **The message has 30 secs to be processed**.  
 There's the **ChangeMessageVisibility** API to get **more time**.
 
+## SQS Delay Queue
+
+The delay the message will wait until it is available **for the first time**.
+
+## Dead Letter Queue
+
+Store messages **that can't be processed** successfully.
+
 ## SQS Long Polling 
 
 The consumer just **wait** for messages between 1 to 20 sec.  
@@ -81,7 +89,8 @@ If a **subscription doesn't have a filter policy, it receives every message**.
 
 Data streams **can scale the number of shards**.  
 Retention is from 1 day to 365 days.  
-You can **reprocess** data. Inserted data **can't be deleted**.
+You can **reprocess** data up to 7 days later.  
+Inserted data **can't be deleted**.
 
 ### Producers
 

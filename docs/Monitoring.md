@@ -100,3 +100,9 @@ All this information is stored into an **S3 bucket**.
 **Config Notifications** can send notifications, email on changes.
 
 *(Ex: Send a message when a certificate is about to expire)*
+
+## Recovery of EC2 Instances
+
+**CloudWatch Alarm** can trigger the **recovery** of EC2 Instances.  
+Up to three times per day. **Instance store volumes are not supported**.  
+A recovered instance is **identical to the original instance**: public / private ips, elastic ip, metadata...

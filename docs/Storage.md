@@ -43,7 +43,9 @@ Type of storage gateway :
 
 SMB compatibility implies that it is compatible with **Active Directory**.  
 The file / volume gateway cam be setup **on premises** and linked to **storage gateway**.  
-**Hardware appliance** is available.  
+**Hardware appliance** is available. 
+
+*(Note: For Volume type, there's the Cached that uses S3 and cache content, and the Storage Mode that store a copy on S3)*
 
 ## Transfer Family
 
@@ -53,7 +55,7 @@ Store and manage credentials within the service.
 
 ## DataSync
 
-Synchronize data to and from places. Like **rsync**.  
+Synchronize **and accelerate** data to and from places. Like **rsync**.  
 On-Premises (DataSync Agent) <-> AWS  
 AWS <-> AWS (S3, FSx, EFS)  
 **Permissions and metadata are preserved**.

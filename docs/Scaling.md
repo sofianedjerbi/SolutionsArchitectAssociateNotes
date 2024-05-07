@@ -132,10 +132,35 @@ When an **AWS-side issue occur on an instance**.
 ASG Does not immediately terminate instances with an **Impaired Status**.  
 It waits a few minutes for the instance to recover.
 
+## Tenancy
+
+**Tenancy** is either:
+
+- **Shared:** Multiple AWS account share the same physical hardware, default option.
+- **Dedicated Instances:** The instance runs on a single-tenant hardware. Not shared with other users. They cannot be used with server-bound licences.
+- **Dedicated Hosts:** The instance runs on a dedicated physical server. It is easier to bring server-bound licences.
+
+It can be configured at **Launch Templates level** or **VPC Level**.  
+If either Launch Template Tenancy or VPC Tenancy is set to **dedicated**, then the **instance tenancy is also dedicated**.  
+
+You can change the tenancy of a running instance from **dedicated to host** and from **host to dedicated**.
+
+## Spot Request
+
+A spot instance request. If capacity is available, Amazon EC2 fulfills your request.    
+If a spot request is **persistent**, then **it is opened again after your Spot Instance is interrupted**.  
+When you cancel an active spot request, **it does not terminate the associated instance**.
+
 ## Spot Fleet
 
-A group of **EC2 spot instances**.
+A group of **EC2 spot instances**.  
+If a spot instance is terminated, the spot fleet will **maintain the target capacity by launching replacement instances**.
 
 ## Spot Block
 
 A **reserved spot instance for 1 to 6 hours**.
+
+## Availability Zone ID
+
+An **AZ ID** that is the **same on every AWS account**.  
+Used because the subnet mapping might be different.

@@ -39,7 +39,8 @@ Up to 15 read replicas, **within AZ, cross AZ or cross region**.
 The application must **update the connection list to list all read replicas.**  
 Cross AZ replication is free but cross region is charged.
 
-*Use-case: Reduce workload for read only applications (reporting apps...)*
+*Use-case: Reduce workload for read only applications (reporting apps...)*  
+*Note: Promotion is done **manually***
 
 
 ## RDS Multi AZ (Disaster Recovery)

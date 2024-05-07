@@ -54,3 +54,10 @@ You can also use it with **CloudTrial** to **intercept API Calls**.
   - Network: S3, EFS, FSx for Lustre
 - **Automation:** Batch jobs, AWS ParallelCluster to deploy HPC clusters.
 
+## CloudFormation Stack
+
+A **set of AWS resources** that are created and managed as a single unit when AWS CloudFormation instantiates a template.
+
+## CloudFormation StackSets
+
+**Extends the functionality of stacks** by enabling you to create, update, or delete stacks across multiple accounts and regions.
