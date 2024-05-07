@@ -40,3 +40,9 @@ We can **filter**, get on a **schedule**, **immediatly**...
 A set of tools to **develop and deploy** full stack **web and mobile apps**.  
 You can connect source code fron Github, AWS CodeCommit, Bitbucket...
 It is like **elastic beanstalk** for web and mobile apps.
+
+## 169.254.169.254
+
+The **localhost** of an instance.  
+
+*Note: localhost = 127.0.0.1 does NOT work on EC2*

@@ -1,5 +1,11 @@
 # Security
 
+
+## Trust Policies
+
+A JSON policy document in which you define the principals that you trust to **assume the role**.  
+A role trust policy is **a required resource-based policy** that is attached to a role in IAM.
+
 ## Key Management Service (KMS)
 
 AWS **managed encryption keys**. You can audit key usage with CloudTrail.  

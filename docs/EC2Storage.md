@@ -55,7 +55,7 @@ Can burst IOPS to 3000.
 Baseline of **3000 IOPS** and throughput of **125MiB/s**.  
 Can **increase IOPS and throughput independently** up to 16000 and 1000MiB/s.
 
-## IO1 / IO2: Provisioned IOPS (PIOPS) SSD
+### IO1 / IO2: Provisioned IOPS (PIOPS) SSD
 
 **Performant SSD** storages, lower latency.  
 **Use case:** Apps that need more than 16000 IOPS, critical business apps, databases...

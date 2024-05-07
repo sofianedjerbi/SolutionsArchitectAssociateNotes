@@ -1,5 +1,14 @@
 # CloudFront
 
+## Routing
+
+Routing can be based on **content**.  
+You can configure a single Amazon CloudFront web distribution to serve different types of requests from multiple origins.
+
+## Encryption
+
+CloudFront can use **field level encryption** to protect **sensitive data**.
+
 ## S3 Origin Access Control (OAC) 
 
 **Restricts access to an S3 bucket's content** to requests **from specific CloudFront distributions**.

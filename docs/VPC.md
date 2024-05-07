@@ -224,3 +224,7 @@ Used to create share a **VPC resources to multiple accounts**.
 ## AWS Resource Access Manager (RAM)
 
 Allows sharing AWS **subnet resources** **across accounts** securely.
+
+## Subnet Group
+
+A **group of subnets** that share the **same rules**.
