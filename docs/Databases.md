@@ -46,7 +46,8 @@ Cross AZ replication is free but cross region is charged.
 ## RDS Multi AZ (Disaster Recovery)
 
 Synchronous replication **only as a failover** in another AZ for availability.  
-**Read replicas can also be used as Multi AZ** for Disaster Recovery.
+**Read replicas can also be used as Multi AZ** for Disaster Recovery.  
+To change to the failover instance, **RDS just change the CNAME record**.
 
 ## From single AZ to multi AZ
 

@@ -46,6 +46,8 @@ Limited throughput: 300 msgs / sec without batching, 3000 msgs with.
 **Deduplication protection using a **Deduplication ID**.
 *Queue name should end with .fifo*
 
+*Note: Not compatible with S3 events*
+
 ## SQS + ASGs
 
 We can **increase ASG capacity** based on **SQS queue length** with **CloudWatch Metric + Alarm**.  
@@ -78,7 +80,7 @@ You can send SNS to S3 through Kinesis Data Firehose.
 ## SNS FIFO
 
 Ordering by **Group ID** (all messages in the same group are ordered).  
-**Deduplication protection using a **Deduplication ID**.
+**Deduplication protection using a **Deduplication ID**.  
 
 ## Message Filtering
 

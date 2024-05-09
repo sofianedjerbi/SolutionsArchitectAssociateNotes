@@ -81,7 +81,7 @@ Cookie types:
 
 Will balance the traffic evenly accross **all** instances.  
 Without it, the traffic will be evenly **divided accross AZ** and distributed accross instances, **but not evenly**.  
-It is **always on for ALBs**, you can disable it on target groups.
+It is **always on for ALBs**, off for other ELBs, you can disable it on target groups.
 
 Will cause **charges for inter-AZ data transfer** on NLBs and GLBs.
 
