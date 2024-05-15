@@ -81,6 +81,7 @@ You can send SNS to S3 through Kinesis Data Firehose.
 
 Ordering by **Group ID** (all messages in the same group are ordered).  
 **Deduplication protection using a **Deduplication ID**.  
+Only **a single consumer per Group ID**.
 
 ## Message Filtering
 
