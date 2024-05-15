@@ -121,7 +121,7 @@ You can send data to a Data Stream, or Firehose.
 
 ### For Apache Flink
 
-Use Flink (Java, Scala, SWL) to process and analywe streaming data.
+Use Flink (Java, Scala, SWL) to process and analyze streaming data.
 
 ## Managed Streaming for Apache Kafka (MSK)
 
