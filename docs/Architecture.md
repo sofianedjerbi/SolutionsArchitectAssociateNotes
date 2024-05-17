@@ -33,7 +33,7 @@ Beanstalk deployment modes:
 Fan out pattern: **Deliver to multiple SQS Queues with SNS**.  
 
 Remember you can use **EventBridge** for more **destinations** and **better filters**.  
-You can also use it with **CloudTrial** to **intercept API Calls**.
+You can also use it with **CloudTrail** to **intercept API Calls**.
 
 ## Caching Strategies
 
