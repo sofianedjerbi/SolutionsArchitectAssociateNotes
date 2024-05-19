@@ -29,7 +29,9 @@ CloudFront Functions are lighweight functions *< 1ms*, Lambda has better margins
 
 **Lambda is launched outside the VPC by default.**  
 You can define the VPC ID, the subnets and the security groups to launch in VPC.  
-Lambda will create an ENI in subnets.  
+Lambda will create an ENI in subnets. 
+
+By default, **Lambda don't have access to the internet**. It need a NAT Gateway.
 
 ## Lambda with RDS Proxy
 
